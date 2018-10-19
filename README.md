@@ -9,5 +9,5 @@
     keys.
 
 
-    **NOTE**    I added the hashCode method to the Position class to allow the correct performance of the equals
+    **NOTE:**    I added the hashCode method to the Position class to allow the correct performance of the equals
                 method.
