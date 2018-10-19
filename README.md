@@ -1,1 +1,0 @@
-# keeperchallenge-solution
