@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/icon.png" type="image/x-icon">
+    <script type="text/javascript" src="/js/functions.js"></script>
+</head>
+
+<body onload="initialize()">
+
+<div id="theMaze" class="maze"></div>
+
+<div id="toolbar" class="toolbar">
+    <div class="toolsection">
+        <h1>The Keeper of the Seven Keys</h1>
+    </div>
+    <div class="toolsection">
+        <button id="startButton" type="button"
+                onclick="document.getElementById('startButton').disabled = true; startRobot()">Start!
+        </button>
+        <button id="stopButton" type="button"
+                onclick="document.getElementById('startButton').disabled = false; stopRobot()">Stop
+        </button>
+        <button id="newWorldButton" type="button"
+                onclick="document.getElementById('startButton').disabled = false; newWorld()">Reset
+        </button>
+    </div>
+    <div class="toolsection">
+        <p>Maze height: <span id="mazeHeight">0</span></p>
+        <p>Maze width: <span id="mazeWidth">0</span></p>
+        <p>Total keys: <span id="numberOfKeys">0</span></p>
+        <p>Keys found: <span id="keysFound">0</span></p>
+        <p>Keeper position: <span id="positionV">x</span>,<span id="positionH">y</span></p>
+    </div>
+    <div class="toolsection">
+        <div id="win" class="win"></div>
+    </div>
+</div>
+
+</body>
+
+</html>
